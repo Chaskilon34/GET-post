@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    animation: fondoFormal 15s ease-in-out infinite;
+    background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+    background-size: 300% 300%;
+}
+
+/* Fondo animado rápido y colorido */
+@keyframes fondoFormal {
+    0% {
+        background-position: 0% 50%;
+        background: linear-gradient(135deg, #1e1e2f, #2d2d44, #3a3a5a);
+    }
+    25% {
+        background-position: 100% 50%;
+        background: linear-gradient(135deg, #23233a, #5a67d8, #2d2d44);
+    }
+    50% {
+        background-position: 0% 50%;
+        background: linear-gradient(135deg, #2b2b3c, #6c63ff, #3c3c5c);
+    }
+    75% {
+        background-position: 100% 50%;
+        background: linear-gradient(135deg, #353545, #8e44ad, #2d2d44);
+    }
+    100% {
+        background-position: 0% 50%;
+        background: linear-gradient(135deg, #1e1e2f, #2d2d44, #3a3a5a);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Contenedor para el formulario de registro */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgba(43, 43, 60, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+/* Estilo de los inputs del formulario */
+form input {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2f2f42;
+    color: #f5f5f5;
+    width: 220px;
+    transition: border-color 0.3s;
+}
+
+/* Estilo cuando los inputs están en foco */
+form input:focus {
+    outline: none;
+    border-color: #5a67d8;
+}
+
+/* Estilo de los placeholders */
+form input::placeholder {
+    color: #aaa;
+}
+
+/* Estilo del botón de registro */
+form button {
+    padding: 12px 24px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 220px;
+}
+
+/* Hover del botón de registro */
+form button:hover {
+    background-color: #434190;
+}
+
+/* Contenedor para la tabla de clientes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(43, 43, 60, 0.95);
+    color: #f5f5f5;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Cabecera de la tabla */
+thead {
+    background-color: #35355c;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #444;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2d2d44;
+}
+
+tbody tr:hover {
+    background-color: #3c3c5c;
+}
+input {
+    margin: 10px 0;
+    padding: 12px 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1rem;
+    width: 80%;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    background-color: #34495e;
+    outline: none;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  a:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
