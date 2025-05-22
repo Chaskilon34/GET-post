@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <a href="producto.html" class="enlace-elegante">Productos</a>
+
+</head>
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <h1>Gestión de Clientes</h1>
+    <form id ="formCliente">
+        <input type="text" id="nombre"placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="correo" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>telefono</th>
+            </tr>
+        </thead>
+        <tbody id="tablaClientes"></tbody>
+    </table>
+     <script src="js/main.js"></script>
+</html>
+<script>
+    const emojis = ['🤪', '👽', '🦄', '💩', '🍕', '🦖', '🐸', '🥳', '😎', '🐵'];
+
+    const numberOfParticles = 30;
+
+    for (let i = 0; i < numberOfParticles; i++) {
+        const emoji = document.createElement('div');
+        emoji.classList.add('emoji-particle');
+        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emoji.style.left = Math.random() * 100 + 'vw';
+        emoji.style.top = Math.random() * 100 + 'vh';
+        emoji.style.animationDuration = (8 + Math.random() * 8) + 's';
+        emoji.style.fontSize = (2 + Math.random() * 2) + 'rem';
+        emoji.style.zIndex = 0;
+        document.body.appendChild(emoji);
+    }
+</script>
+
+</body>
