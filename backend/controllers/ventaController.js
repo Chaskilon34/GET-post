@@ -1,6 +1,6 @@
 import { 
     obtenerVentas as obtenerVentasModel,
-    resgitrarVenta as registrarVentaModel
+    registrarVenta as registrarVentaModel
 } from '../models/ventaModel.js';
 
 export const registrarVenta = (req, res) => {

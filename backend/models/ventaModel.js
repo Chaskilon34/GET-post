@@ -1,6 +1,6 @@
 import {db} from '../config/db.js';
 
-export const resgistrarVenta = (venta, callback) => {
+export const registrarVenta = (venta, callback) => {
     const {id_cliente, id_producto, cantidad} = venta;
     db.query('select precio, stock from productos where id = ?', [id_producto], (err, result) => {
         if (err) return callback(err);
